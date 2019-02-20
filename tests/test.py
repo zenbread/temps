@@ -1,9 +1,12 @@
+
 import unittest
 import temperature
 
+
 class TestTemp(unittest.TestCase):
     def test_create(self):
-        self.assertIsNotNone(temperature.Temperature())
+        p = temperature.Temperature()
+        self.assertIsNotNone(p)
 
     def test_Cel(self):
         p = temperature.Temperature(C=1)
