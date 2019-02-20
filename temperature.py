@@ -1,6 +1,6 @@
 
 class Temperature():
-    def __init__(self, C = None, F = None, K = 0, D = None):
+    def __init__(self, C = None, F = None, K = None, D = None):
         self.C = C
         self.F = F
         self.K = K
