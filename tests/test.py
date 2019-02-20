@@ -1,6 +1,7 @@
 import unittest
 import temperature
 
+
 class TestTemp(unittest.TestCase):
     def test_create(self):
         self.assertIsNotNone(temperature.Temperature())
