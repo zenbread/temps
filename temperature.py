@@ -10,6 +10,9 @@ class Temperature():
             self._GetTemps()
             self._RoundTemps()
 
+    def __add__(self, other):
+        return Temperature(self.C + other.C)
+
     def _GetTemps(self):
         if self.C is not None:
             self.C = float(self.C)
