@@ -11,7 +11,7 @@ class Temperature():
             self._RoundTemps()
 
     def __add__(self, other):
-        return Temperature(self.C + other.C)
+        return Temperature(C=self.C + other.C)
 
     def _GetTemps(self):
         if self.C is not None:
